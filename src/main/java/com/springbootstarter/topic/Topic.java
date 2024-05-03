@@ -1,7 +1,14 @@
 package com.springbootstarter.topic;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+//for storing this in database and get from database
+@Entity
 public class Topic {
     
+    //show this is primary key
+    @Id
     private String id;
     private String name;
     private String description;
